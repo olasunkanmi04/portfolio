@@ -1,0 +1,122 @@
+.home {
+    padding: 120px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+    &__info {
+        width: 100%;
+        max-width: 540px;
+    }
+
+    &__intro {
+        font: normal normal 800 50px/73px Gothic A1;
+        letter-spacing: 3.5px;
+        color: #FFFFFF;
+        margin-bottom: 50px;
+
+        &-brief {
+            font: normal normal normal 14px/21px Gothic A1;
+            letter-spacing: 0.98px;
+            color: #949495;
+            margin-bottom: 50px;
+
+            a {
+                color: #FFFFFF;
+                text-decoration: underline;
+                font-weight: 500;
+            }
+        }
+    }
+
+    &__nav {
+        margin-bottom: 50px;
+
+        &-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            margin-bottom: 30px;
+            color: #949495;
+
+            &:hover,
+            &.active {
+                color: #FFFFFF;
+
+                hr {
+                    width: 60px;
+                }
+            }
+
+            hr {
+                width: 30px;
+                margin: 0 10px;
+                border: none;
+                border-bottom: 1px solid #949495;
+                transition: width 1s;
+            }
+        }
+
+        &-number {
+            font: normal normal 700 12px/17px Gothic A1;
+            letter-spacing: 0.84px;
+
+        }
+
+        &-title {
+            font: normal normal 700 12px/17px Gothic A1;
+            letter-spacing: 0.84px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__email {
+        font: normal normal 500 14px/21px Gothic A1;
+        letter-spacing: 0.98px;
+        color: #FFFFFF;
+        text-decoration: none;
+        margin-bottom: 72px;
+        display: block;
+
+        &-icon {
+            fill: #FFFFFF;
+            height: 22px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+    }
+
+    &__external {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+
+        &-link {
+            font: normal normal 500 14px/21px Gothic A1;
+            letter-spacing: 0.98px;
+            color: #FFFFFF;
+            text-decoration: none;
+            margin-left: 40px;
+        }
+
+        &-icon {
+            width: 12px;
+            height: 12px;
+            fill: #FFFFFF;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+    }
+
+    &__pics {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background-image: url('../assets/images/me.jpg');
+        background-position: center 0%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

@@ -1,0 +1,12 @@
+.body {
+    width: 100%;
+    max-width: 1366px
+}
+
+/* CORE */
+@import "core/reset";
+@import "core/normalize";
+@import "core/mixins";
+@import "core/fonts";
+
+@import 'home'
