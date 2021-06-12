@@ -1,13 +1,25 @@
 .home {
-    padding: 120px 50px;
-    display: flex;
-    flex-wrap: wrap;
+    padding: 120px 50px 20px;
     justify-content: space-between;
-
+    position: relative;
 
     &__info {
         width: 100%;
         max-width: 540px;
+        margin-right: 50px;
+        position: fixed;
+
+    }
+
+    &__title {
+        font: normal normal bold 18px/27px Gothic A1;
+        letter-spacing: 1.26px;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+
+        &.mobile {
+            display: none;
+        }
     }
 
     &__intro {
@@ -15,6 +27,7 @@
         letter-spacing: 3.5px;
         color: #FFFFFF;
         margin-bottom: 50px;
+        margin-top: 0;
 
         &-brief {
             font: normal normal normal 14px/21px Gothic A1;
@@ -118,5 +131,260 @@
         background-position: center 0%;
         background-size: cover;
         background-repeat: no-repeat;
+    }
+
+    &__content {
+        width: 100%;
+        max-width: 644px;
+        margin-left: auto;
+    }
+
+    &__projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 80px;
+
+        &-individual {
+            height: 379px;
+            width: 100%;
+            max-width: 320px;
+            background-size: cover;
+            background-position: center 0%;
+            background-repeat: no-repeat;
+            margin-bottom: 4px;
+
+            &:hover {
+                .home__projects-individual-detail {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+
+            &-detail {
+                width: 100%;
+                height: 100%;
+                background-color: rgba(#151515, 0.2);
+                position: relative;
+                opacity: 0;
+                visibility: hidden;
+                transition: visibility 0.3s linear, opacity 0.3s linear;
+
+                &-content {
+                    background-color: rgba(#151515, 0.95);
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    height: 156px;
+                    border-top-left-radius: 8px;
+                    border-top-right-radius: 8px;
+                    padding: 40px 10px 10px;
+                }
+            }
+
+            &-title {
+                color: #FFFFFF;
+                margin-bottom: 10px;
+                text-align: center;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 36px;
+                letter-spacing: 1.26px;
+                text-decoration: none;
+
+                &-wrap {
+                    width: fit-content;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+
+            &-industry {
+                color: #949495;
+                font-size: 12px;
+                font-weight: 600;
+                line-height: 18px;
+                text-align: center;
+            }
+
+            &-sub {
+                position: absolute;
+                bottom: 10px;
+                display: flex;
+                justify-content: space-between;
+                width: calc(100% - 20px);
+            }
+
+            &-website {
+                color: #949495;
+                margin-right: 5px;
+                font-size: 10px;
+                line-height: 15px;
+                text-decoration: none;
+
+                .home__external-icon {
+                    fill: #949495;
+                }
+            }
+
+            &-tech {
+                width: fit-content;
+                color: #949495;
+                margin-right: 5px;
+                font-size: 10px;
+                line-height: 15px;
+
+                span {
+                    margin-right: 10px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &__language {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    &__skill {
+        background: #202022;
+        font: normal normal 700 14px/21px Gothic A1;
+        letter-spacing: 0.98px;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 13px 40px;
+        transition: font-size 0.3s;
+        margin-right: 10px;
+        margin-bottom: 10px;
+
+        &:hover {
+            font-size: 18px;
+        }
+    }
+
+    &__credit {
+        font: normal normal 500 8px/12px Gothic A1;
+        letter-spacing: 0.98px;
+        color: #949495;
+
+        a {
+            font: normal normal 500 8px/12px Gothic A1;
+            letter-spacing: 0.98px;
+            color: #D5D5D5;
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (max-width:1299px) {
+    .home {
+        padding: 50px 20px 20px;
+    }
+}
+
+@media screen and (max-width:1240px) {
+    .home__intro {
+        font-size: 40px;
+        line-height: 60px;
+        margin-bottom: 30px;
+    }
+
+    .home__info {
+        max-width: 470px;
+    }
+
+    .home__projects-individual {
+        max-width: 300px;
+        height: 330px;
+    }
+
+    .home__content {
+        max-width: 604px;
+    }
+}
+
+@media screen and (max-width:1131px) {
+    .home__info {
+        max-width: 100%;
+        position: relative;
+        margin-bottom: 50px;
+    }
+
+    .home__content {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home__nav {
+        display: none;
+    }
+
+    .home__intro-brief {
+        margin-bottom: 30px;
+    }
+
+    .home__email {
+        margin-bottom: 30px;
+    }
+
+    .home__title.mobile {
+        display: block;
+    }
+}
+
+@media screen and (max-width:1040px) {
+    .home__projects-individual-detail {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .home__projects-individual-detail-content {
+        padding-top: 20px;
+        min-height: 128px;
+        height: auto;
+    }
+
+    .home__projects-individual-title {
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .home__projects-individual {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home__intro {
+        font-size: 33px;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .home__external-link {
+        margin-left: 20px;
+    }
+
+
+
+
+}
+
+@media screen and (max-width:400px) {
+    .home__pics {
+        display: none;
+    }
+
+    .home__external-link {
+        &:nth-child(2) {
+            margin-left: 0;
+        }
     }
 }

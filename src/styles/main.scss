@@ -1,6 +1,8 @@
 .body {
     width: 100%;
-    max-width: 1366px
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* CORE */
@@ -9,4 +11,5 @@
 @import "core/mixins";
 @import "core/fonts";
 
-@import 'home'
+@import 'home';
+@import 'product';
