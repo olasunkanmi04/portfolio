@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "gridsome": "^0.7.0",
-    "vue-svgicon": "^3.2.9"
+    "vue-svgicon": "^3.2.9",
+    "vue2-smooth-scroll": "^1.5.0"
   },
   "devDependencies": {
     "node-sass": "^6.0.0",
