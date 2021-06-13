@@ -8,7 +8,12 @@
     "generate-icons": "vsvg -s ./svg-icons -t ./src/assets/icons"
   },
   "dependencies": {
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.6.4",
     "gridsome": "^0.7.0",
+    "gridsome-plugin-netlify-cms": "^1.0.9",
+    "gridsome-plugin-netlify-cms-paths": "^0.3.1",
+    "netlify-cms": "^2.10.139",
     "vue-svgicon": "^3.2.9",
     "vue2-smooth-scroll": "^1.5.0"
   },
