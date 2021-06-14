@@ -9,6 +9,16 @@ module.exports = {
   templates: {
     Portfolio: '/project/:title'
   },
+  transformers: {
+    remark: {
+      externalLinksTarget: '_blank',
+      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+      anchorClassName: 'icon icon-link',
+      plugins: [
+        // ...global plugins
+      ]
+    }
+  },
   plugins: [
     {
       use: '@gridsome/source-filesystem',
@@ -18,10 +28,14 @@ module.exports = {
         route:'/works/:slug'
       }
     },
+    {
+      use: `gridsome-plugin-netlify-cms`,
+      options: {
+        publicPath: `/admin`,
+        modulePath: `src/admin/index.js`
+      }
+    },
   ],
-  transformers: {
-    remark: {
-    }
-  },
+
  
 }
