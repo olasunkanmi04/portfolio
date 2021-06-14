@@ -23,4 +23,5 @@ collections:
       - { label: 'Project Heading', name: 'projectHeading', widget: 'string' }
       - { label: 'Main Tags', name: 'maintags', widget: 'list' }
       - { label: 'Cover Image', name: 'cover_image', widget: 'string' }
+      - { label: 'Image', name: 'image', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown' }

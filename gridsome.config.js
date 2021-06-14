@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: 'Olasunkanmi Portfolio',
-  siteDescription: 'Olasunkanmi | Frontend developer',
+  siteDescription: 'Olasunkanmi | A Frontend developer',
   siteUrl: 'olasunkanmi.dev',
   metadata: {
     author: 'Alabi Olasunkanmi',
