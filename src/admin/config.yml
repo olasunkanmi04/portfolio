@@ -3,7 +3,7 @@ backend:
   repo: olasunkanmi04/portfolio
   branch: main
 
-media_folder: "static/uploads"
+media_folder: "/static/uploads"
 public_folder: "/uploads"
 
 collections:
