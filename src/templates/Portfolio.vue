@@ -13,7 +13,7 @@
           </g-link>
           <h1 class="product__title">{{ $page.work.projectHeading }}</h1>
           <p class="product__tech">
-            <span>Technology:</span> {{ $page.work.tags.join(", ") }}
+            <span>Technology:</span> {{ $page.work.maintags.join(", ") }}
           </p>
         </div>
         <article>
@@ -34,6 +34,7 @@ query Portfolio ($path: String!) {
     website
     industry
     content
+    maintags
   }
 }
 </page-query>
