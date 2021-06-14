@@ -1,14 +1,23 @@
 ---
 title: Spleet Africa
+description: Spleet Africa project by Olasunkanmi
 date: 2021-06-12
 published: true
-tags: [HTML, SCSS, Bootstrap, Vuejs]
+tags:
+  - HTML
+  - SCSS
+  - Bootstrap
+  - Vuejs
 website: https://spleet.africa
-cover_image: /assets/images/spleet.png
 industry: PropTech
 projectHeading: Easier living in Africa
-maintags: [HTML, SCSS, Bootstrap, Vuejs, Vuex]
-description: Spleet Africa project by Olasunkanmi
+maintags:
+  - HTML
+  - SCSS
+  - Bootstrap
+  - Vuejs
+  - Vuex
+cover_image: static/uploads/spleet.png
 ---
 
 Spleet is a leading proptech company in Africa. Building the future
