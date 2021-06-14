@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="body product">
+    <div class="body">
       <div class="home">
         <div class="product__content">
           <g-link
@@ -16,7 +16,7 @@
             <span>Technology:</span> {{ $page.work.maintags.join(", ") }}
           </p>
         </div>
-        <article>
+        <article class="product">
           <div v-html="$page.work.content"></div>
         </article>
       </div>
