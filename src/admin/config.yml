@@ -1,18 +1,19 @@
 backend:
   name: git-gateway
-  branch: main # Branch to update (optional; defaults to master)
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
 
 collections:
-  - name: "posts"
-    label: "Posts"
-    folder: "posts"
+  - name: "portfolio"
+    label: "Portfolio"
+    folder: "content/works"
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Excerpt", name: "excerpt", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown"}
+       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'date' }
+      - { label: 'Published', name: 'published', widget: 'boolean', default: true }
+      - { label: 'Tags', name: 'tags', widget: 'list', hint: 'Specify a maximum of two tags', field: { name: tag, label: Tag, widget: string } }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
