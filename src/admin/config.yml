@@ -18,4 +18,8 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'date' }
       - { label: 'Published', name: 'published', widget: 'boolean', default: true }
       - { label: 'Tags', name: 'tags', widget: 'list' }
+      - { label: 'Website', name: 'website', widget: 'string' }
+      - { label: 'Industry', name: 'industry', widget: 'string' }
+      - { label: 'Project Heading', name: 'projectHeading', widget: 'string' }
+      - { label: 'Main Tags', name: 'maintags', widget: 'list' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
