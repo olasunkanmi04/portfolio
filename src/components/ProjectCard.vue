@@ -22,8 +22,8 @@
           ></g-link>
 
           <p class="home__projects-individual-tech">
-            <span v-for="(tech, index) in work.tech" :key="index">{{
-              tech.title
+            <span v-for="(tech, index) in work.tags" :key="index">{{
+              tech
             }}</span>
             <!-- <span>SCSS</span>
             <span>Bootstrap</span>

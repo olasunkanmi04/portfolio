@@ -1,32 +1,25 @@
 <template>
   <Layout>
-    <div class="work-container">
-      <aside class="sidebar">
-        <h3 class="no-space-top">{{ $page.work.title }}</h3>
-        <p>{{ $page.work.description }}</p>
-        <hr />
-        <p class="work-details">
-          <strong>Year</strong>
-          <span>{{ $page.work.date }}</span>
-        </p>
-        <p class="work-details">
-          <strong>Client</strong>
-          <span>{{ $page.work.client }}</span>
-        </p>
-        <p class="work-details">
-          <strong>Role</strong>
-          <span>{{ $page.work.client }}</span>
-        </p>
-        <p class="work-details">
-          <strong>Link</strong>
-          <a :href="`//${$page.work.link}`" class="work-link" target="_blank">{{
-            $page.work.link
-          }}</a>
-        </p>
-      </aside>
-      <article class="content">
-        <div v-html="$page.work.content"></div>
-      </article>
+    <div class="body product">
+      <div class="home">
+        <div class="product__content">
+          <g-link
+            :to="$page.work.website"
+            target="_blank"
+            class="product__website"
+          >
+            {{ $page.work.title }}
+            <svgicon name="link" class="home__external-icon"></svgicon>
+          </g-link>
+          <h1 class="product__title">{{ $page.work.projectHeading }}</h1>
+          <p class="product__tech">
+            <span>Technology:</span> {{ $page.work.tags.join(", ") }}
+          </p>
+        </div>
+        <article>
+          <div v-html="$page.work.content"></div>
+        </article>
+      </div>
     </div>
   </Layout>
 </template>
@@ -36,15 +29,11 @@ query Portfolio ($path: String!) {
   work: portfolio(path: $path) {
     id
     title
-    description
-    cover_image
+    projectHeading
+    tags
+    website
+    industry
     content
-    path
-    date (format: "YYYY")
-    timeToRead
-    client
-    role
-    link
   }
 }
 </page-query>

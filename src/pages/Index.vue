@@ -68,7 +68,7 @@
                 :key="edge.node.id"
                 :work="edge.node"
               ></ProjectCard>
-              <div
+              <!-- <div
                 class="home__projects-individual"
                 :style="{
                   'background-image':
@@ -209,7 +209,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
           <div id="skills">
@@ -266,9 +266,7 @@ query{
         path
         cover_image
         date(format: "D. MMMM YYYY")
-        tags{
-          title
-        }
+        tags
         website
         industry
       }
@@ -279,7 +277,7 @@ query{
 </page-query>
 
 <script>
-import ProjectCard from "~/components/Projectcard.vue";
+import ProjectCard from "~/components/ProjectCard.vue";
 export default {
   metaInfo: {
     title: "Home",
