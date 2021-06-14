@@ -1,4 +1,38 @@
 .product {
+    p {
+        font: normal normal 400 18px/27px Gothic A1;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+        width: 100%;
+        max-width: 800px;
+    }
+
+    h1 {
+        font: normal normal 800 60px/87px Gothic A1;
+        letter-spacing: 4.2px;
+        color: #ffffff;
+        margin-top: 0;
+        margin-bottom: 4px;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    h2 {
+        font: normal normal 800 32px/46px Gothic A1;
+        letter-spacing: 0.77px;
+        color: #FFFFFF;
+        margin-bottom: 34px;
+        width: 100%;
+        max-width: 800px;
+    }
+
+    img {
+        border: 1px solid #707070;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 50px;
+    }
+
     &__website {
         font: normal normal 800 14px/21px Gothic A1;
         letter-spacing: 0.34px;
@@ -58,6 +92,29 @@
 }
 
 @media screen and (max-width:700px) {
+    .product {
+        p {
+            font-size: 14px;
+            line-height: 21px;
+            margin-bottom: 14px;
+        }
+
+        h1 {
+            font-size: 40px;
+            line-height: 60px;
+        }
+
+        h2 {
+            font-size: 24px;
+            line-height: 36px;
+            margin-bottom: 18px;
+        }
+
+        img {
+            margin-bottom: 30px;
+        }
+    }
+
     .product__title {
         font-size: 40px;
         line-height: 60px;
@@ -86,6 +143,29 @@
 }
 
 @media screen and (max-width:500px) {
+    .product {
+        p {
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        h1 {
+            font-size: 30px;
+            line-height: 45px;
+            letter-spacing: normal
+        }
+
+        h2 {
+            font-size: 18px;
+            line-height: 27px;
+            margin-bottom: 10px;
+        }
+
+        img {
+            margin-bottom: 30px;
+        }
+    }
+
     .product__title {
         font-size: 30px;
         line-height: 45px;

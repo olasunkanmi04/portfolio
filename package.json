@@ -8,6 +8,8 @@
     "generate-icons": "vsvg -s ./svg-icons -t ./src/assets/icons"
   },
   "dependencies": {
+    "@gridsome/source-filesystem": "^0.6.2",
+    "@gridsome/transformer-remark": "^0.6.4",
     "gridsome": "^0.7.0",
     "vue-svgicon": "^3.2.9",
     "vue2-smooth-scroll": "^1.5.0"

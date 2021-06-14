@@ -63,7 +63,12 @@
           <div id="project">
             <p class="home__title mobile">Projects</p>
             <div class="home__projects">
-              <div
+              <ProjectCard
+                v-for="edge in $page.portfolio.edges"
+                :key="edge.node.id"
+                :work="edge.node"
+              ></ProjectCard>
+              <!-- <div
                 class="home__projects-individual"
                 :style="{
                   'background-image':
@@ -204,7 +209,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
           <div id="skills">
@@ -251,15 +256,37 @@
   </Layout>
 </template>
 
+<page-query>
+query{
+  portfolio: allPortfolio( filter: {published: {eq: true}}, sortBy: "date"){
+    edges{
+      node{
+        id
+        title
+        path
+        cover_image
+        date(format: "D. MMMM YYYY")
+        tags
+        website
+        industry
+      }
+    }
+  }
+}
+
+</page-query>
+
 <script>
+import ProjectCard from "~/components/ProjectCard.vue";
 export default {
   metaInfo: {
     title: "Home",
+  },
+  components: {
+    ProjectCard,
   },
   data() {
     return {};
   },
 };
 </script>
-
-<style></style>

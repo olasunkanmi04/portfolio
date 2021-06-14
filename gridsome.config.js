@@ -6,5 +6,22 @@
 
 module.exports = {
   siteName: 'Olasunkanmi',
-  plugins: []
+  templates: {
+    Portfolio: '/project/:title'
+  },
+  plugins: [
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Portfolio',
+        path: 'content/works/**/*.md',
+        route:'/works/:slug'
+      }
+    },
+  ],
+  transformers: {
+    remark: {
+    }
+  },
+ 
 }
