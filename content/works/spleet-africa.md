@@ -20,6 +20,7 @@ maintags:
   - JavaScript
   - Figma
 cover_image: /uploads/spleet.jpg
+image: /uploads/spleet.jpg
 ---
 Spleet is a leading proptech company in Africa. Building the future of structured and equitable access to housing where everybody gets a fair chance at efficient and affordable living spaces.
 
