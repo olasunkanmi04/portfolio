@@ -35,16 +35,20 @@ query Portfolio ($path: String!) {
     industry
     content
     maintags
+    path
+    description
   }
 }
 </page-query>
 <script>
+import Seo from "../mixin/SEO";
 export default {
-  metaInfo() {
-    return {
-      title: this.$page.work.title,
-    };
-  },
+  mixins: [Seo],
+  // metaInfo() {
+  //   return {
+  //     title: this.$page.work.title,
+  //   };
+  // },
 };
 </script>
 

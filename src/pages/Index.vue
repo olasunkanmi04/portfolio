@@ -237,7 +237,7 @@
               <div class="home__skill">Gridsome</div>
             </div>
 
-            <p class="home__title">soft skills</p>
+            <p class="home__title">Soft Skills</p>
             <div class="home__language" style="margin-bottom:70px">
               <div class="home__skill">Proactive</div>
               <div class="home__skill">Detailed</div>
