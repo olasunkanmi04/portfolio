@@ -1,6 +1,6 @@
 backend:
-  name: github
-  repo: olasunkanmi04/portfolio
+  name: git-gateway
+  # repo: olasunkanmi04/portfolio
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
