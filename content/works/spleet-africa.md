@@ -17,7 +17,7 @@ maintags:
   - Bootstrap
   - Vuejs
   - Vuex
-cover_image: /uploads/spleet.png
+cover_image: /uploads/spleet.jpg
 ---
 
 Spleet is a leading proptech company in Africa. Building the future
