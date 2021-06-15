@@ -25,9 +25,6 @@
             <span v-for="(tech, index) in work.tags" :key="index">{{
               tech
             }}</span>
-            <!-- <span>SCSS</span>
-            <span>Bootstrap</span>
-            <span>Vuejs</span> -->
           </p>
         </div>
       </div>

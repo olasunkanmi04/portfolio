@@ -51,33 +51,3 @@ export default {
   // },
 };
 </script>
-
-<style lang="scss">
-.sidebar {
-  .work-details {
-    display: table;
-    table-layout: fixed;
-    strong {
-      width: 150px;
-      display: table-cell;
-    }
-
-    & a.work-link {
-      color: #ffffff;
-    }
-  }
-}
-@media screen and (min-width: 1024px) {
-  .work-container {
-    width: 100%;
-    display: flex;
-  }
-  .sidebar {
-    flex-basis: 35%;
-    padding-right: 3rem;
-  }
-  .content {
-    flex: 1;
-  }
-}
-</style>

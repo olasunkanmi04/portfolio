@@ -35,11 +35,10 @@
             ><svgicon name="email" class="home__email-icon"></svgicon>
             alabiolasunkanmi@outlook.com</a
           >
-
           <div class="home__external">
             <div class="home__pics"></div>
             <g-link
-              to="https://drive.google.com/file/d/1TxunlEelIv9ZtsnvQjhpqQdAlAuYs2xP/view?usp=sharing"
+              to="../assets/doc/olasunkanmi_resume.pdf"
               class="home__external-link"
               target="_blank"
               >Résumé <svgicon name="link" class="home__external-icon"></svgicon
@@ -68,148 +67,6 @@
                 :key="edge.node.id"
                 :work="edge.node"
               ></ProjectCard>
-              <!-- <div
-                class="home__projects-individual"
-                :style="{
-                  'background-image':
-                    'url(' + require('../assets/images/spleet.png') + ')',
-                }"
-              >
-                <div class="home__projects-individual-detail">
-                  <div class="home__projects-individual-detail-content">
-                    <div class="home__projects-individual-title-wrap">
-                      <g-link
-                        to="/project-detail"
-                        class="home__projects-individual-title"
-                        >Spleet Africa</g-link
-                      >
-                      <p class="home__projects-individual-industry">PropTech</p>
-                    </div>
-                    <div class="home__projects-individual-sub">
-                      <g-link
-                        to="https://spleet.africa"
-                        class="home__projects-individual-website"
-                        >Website<svgicon
-                          name="link"
-                          class="home__external-icon"
-                        ></svgicon
-                      ></g-link>
-
-                      <p class="home__projects-individual-tech">
-                        <span>HTML</span>
-                        <span>SCSS</span>
-                        <span>Bootstrap</span>
-                        <span>Vuejs</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="home__projects-individual"
-                :style="{
-                  'background-image':
-                    'url(' + require('../assets/images/spleet.png') + ')',
-                }"
-              >
-                <div class="home__projects-individual-detail">
-                  <div class="home__projects-individual-detail-content">
-                    <div class="home__projects-individual-title-wrap">
-                      <g-link to="/" class="home__projects-individual-title"
-                        >Spleet Africa</g-link
-                      >
-                      <p class="home__projects-individual-industry">PropTech</p>
-                    </div>
-                    <div class="home__projects-individual-sub">
-                      <g-link
-                        to="https://spleet.africa"
-                        class="home__projects-individual-website"
-                        >Website<svgicon
-                          name="link"
-                          class="home__external-icon"
-                        ></svgicon
-                      ></g-link>
-
-                      <p class="home__projects-individual-tech">
-                        <span>HTML</span>
-                        <span>SCSS</span>
-                        <span>Bootstrap</span>
-                        <span>Vuejs</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="home__projects-individual"
-                :style="{
-                  'background-image':
-                    'url(' + require('../assets/images/spleet.png') + ')',
-                }"
-              >
-                <div class="home__projects-individual-detail">
-                  <div class="home__projects-individual-detail-content">
-                    <div class="home__projects-individual-title-wrap">
-                      <g-link to="/" class="home__projects-individual-title"
-                        >Spleet Africa</g-link
-                      >
-                      <p class="home__projects-individual-industry">PropTech</p>
-                    </div>
-                    <div class="home__projects-individual-sub">
-                      <g-link
-                        to="https://spleet.africa"
-                        class="home__projects-individual-website"
-                        >Website<svgicon
-                          name="link"
-                          class="home__external-icon"
-                        ></svgicon
-                      ></g-link>
-
-                      <p class="home__projects-individual-tech">
-                        <span>HTML</span>
-                        <span>SCSS</span>
-                        <span>Bootstrap</span>
-                        <span>Vuejs</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="home__projects-individual"
-                :style="{
-                  'background-image':
-                    'url(' + require('../assets/images/spleet.png') + ')',
-                }"
-              >
-                <div class="home__projects-individual-detail">
-                  <div class="home__projects-individual-detail-content">
-                    <div class="home__projects-individual-title-wrap">
-                      <g-link to="/" class="home__projects-individual-title"
-                        >Spleet Africa</g-link
-                      >
-                      <p class="home__projects-individual-industry">PropTech</p>
-                    </div>
-                    <div class="home__projects-individual-sub">
-                      <g-link
-                        to="https://spleet.africa"
-                        class="home__projects-individual-website"
-                        >Website<svgicon
-                          name="link"
-                          class="home__external-icon"
-                        ></svgicon
-                      ></g-link>
-
-                      <p class="home__projects-individual-tech">
-                        <span>HTML</span>
-                        <span>SCSS</span>
-                        <span>Bootstrap</span>
-                        <span>Vuejs</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div> -->
             </div>
           </div>
           <div id="skills">

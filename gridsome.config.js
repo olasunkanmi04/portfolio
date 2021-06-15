@@ -5,8 +5,8 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Olasunkanmi Portfolio',
-  siteDescription: 'Olasunkanmi | A Frontend developer',
+  siteName: 'Alabi Olasunkanmi',
+  siteDescription: 'Alabi Olasunkanmi | A Frontend developer',
   siteUrl: 'olasunkanmi.dev',
   metadata: {
     author: 'Alabi Olasunkanmi',
