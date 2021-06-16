@@ -1,8 +1,8 @@
 ---
 title: Atom Insure
 description: I built the Frontend of an Insurance platform
-date: 2021-06-16T13:58:29.817Z
-published: false
+date: 2021-06-15T13:58:29.817Z
+published: true
 tags:
   - HTML
   - SCSS
