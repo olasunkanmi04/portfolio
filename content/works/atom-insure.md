@@ -10,7 +10,7 @@ tags:
   - Reactjs
 website: https://atom.insure/
 industry: Insurance
-projectHeading: Affordable and accessible insurance service for everyone.
+projectHeading: Affordable insurance service.
 maintags:
   - Reactjs
   - Axios
@@ -22,8 +22,6 @@ maintags:
 cover_image: uploads/atom.jpg
 image: /uploads/atom.jpg
 ---
-
-
 Atom Insure offers an affordable and accessible insurance service for everyone in Africa, starting with Nigeria, by building a smart, simple and easy to understand insurance product.
 
 I developed different parts of the Atom Insure platform, converting complex UI to web and mobile-ready application using Reactjs and integrating APIs from the backend team using Axios.
@@ -36,7 +34,8 @@ Atom target of making insurance service available to everyone in Africa led to t
 
 ## For Business
 
-I also worked on the business-facing part of Atom for businesses to provide amazing insurance benefits for their Clients. \
+I also worked on the business-facing part of Atom for businesses to provide amazing insurance benefits for their Clients. 
+
 I built a web application that features onboarding and verification of a business, a wallet system and a dashboard to keep track of their number of clients and policies purchased or claimed.
 
 ![Atom business](/uploads/atom-business.jpg "Atom business")
