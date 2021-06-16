@@ -1,7 +1,7 @@
 ---
 title: Spleet Africa
 description: Spleet Africa project by Olasunkanmi
-date: 2021-06-13T23:00:00.000Z
+date: 2021-06-15T23:00:00.000Z
 published: true
 tags:
   - HTML
