@@ -22,6 +22,7 @@ maintags:
 cover_image: /uploads/spleet.jpg
 image: /uploads/spleet.jpg
 ---
+
 Spleet is a leading proptech company in Africa. Building the future of structured and equitable access to housing where everybody gets a fair chance at efficient and affordable living spaces.
 
 I built all of the Spleet frontend, converting UI designs to web and mobile-ready application using the component base approach for reusable design components, while integrating API from the backend team as well as third-party APIs integration such as different payment APIs, google map’s API etc.

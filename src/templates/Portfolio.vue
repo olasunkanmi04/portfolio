@@ -44,10 +44,5 @@ query Portfolio ($path: String!) {
 import Seo from "../mixin/SEO";
 export default {
   mixins: [Seo],
-  // metaInfo() {
-  //   return {
-  //     title: this.$page.work.title,
-  //   };
-  // },
 };
 </script>
