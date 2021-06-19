@@ -2,7 +2,7 @@
 title: Afiaanyi
 description: I worked as a frontend developer on an e-commerce platform
 date: 2019-02-12T22:39:06.220Z
-published: false
+published: true
 tags:
   - HTML
   - SCSS
