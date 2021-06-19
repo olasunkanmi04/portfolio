@@ -10,7 +10,7 @@ tags:
   - Bootstrap
 website: https://afiaanyi.com/
 industry: e-Commerce
-projectHeading: Our Market
+projectHeading: ...Our Market
 maintags:
   - HTML
   - SCSS
