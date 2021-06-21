@@ -32,3 +32,11 @@ I worked on an extensive seller's dashboard, where businesses upload and manage 
 I used chartjs to create a statistical graph for sellers to monitor order volume, sales rate and generate sales report. And a table to track order progress, from the creation of order to shipment and completion of the order.
 
 ![Afiaanyi seller](/uploads/afiaanyi-seller.jpg "Afiaanyi seller")
+
+## Admin's Dashboard
+
+I converted the UI of the admin's dashboard into HTML and CSS, where the platform's admin manages all activities on the Afiaanyi platform.
+
+Actions such as creating business categories, managing businesses and top brands, and also, adding of products, managing orders and shippments on the e-commerce platform.
+
+![Afiaanyi Admin](/uploads/afiaanyi-admin.jpg "Afiaanyi Admin")
