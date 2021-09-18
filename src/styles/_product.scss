@@ -32,6 +32,16 @@
         margin-bottom: 50px;
     }
 
+    a {
+        color: #949495;
+        text-decoration: none;
+
+        &:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+    }
+
     &__website {
         font: normal normal 800 14px/21px Gothic A1;
         letter-spacing: 0.34px;
