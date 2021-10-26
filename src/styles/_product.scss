@@ -42,6 +42,28 @@
         }
     }
 
+    ul,
+    ol {
+        list-style-type: disc;
+        list-style-position: inside;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 20px;
+
+        li {
+            margin-bottom: 20px;
+            font: normal normal 400 18px/27px Gothic A1;
+            color: #fff;
+            margin-bottom: 10px;
+            width: 100%;
+            max-width: 800px;
+        }
+    }
+
+    ol {
+        list-style-type: unit;
+    }
+
     &__website {
         font: normal normal 800 14px/21px Gothic A1;
         letter-spacing: 0.34px;
