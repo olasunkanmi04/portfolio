@@ -6,8 +6,9 @@
         <div class="home__info">
           <h1 class="home__intro">Hello, I am Olasunkanmi Alabi.</h1>
           <p class="home__intro-brief">
-            A Front-end developer currently working as Front-end Engineer at
-            <a href="http://spleet.africa/" target="_blank">Spleet Africa</a>.
+            A Front-end developer currently working as Senior Front-end Engineer
+            at
+            <a href="http://leatherback.co/" target="_blank">Leatherback</a>.
             Proficient in HTML, CSS, and JavaScript with working experience
             using modern libraries and frameworks. I have launched Web and
             Progressive Web Applications using
