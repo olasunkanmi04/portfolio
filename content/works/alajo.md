@@ -32,6 +32,8 @@ I implemented every UI and integrated API from the backend. Used Chartjs for the
 
 ![Alajo homepage](/uploads/alajo-homepage.jpg "Alajo homepage")
 
+![Alajo dashboard](/uploads/alajo-dashboard.jpg "Alajo dashboard")
+
 ![Alajo tables](/uploads/alajo-two.jpg "Alajo tables")
 
 ![Alajo collector](/uploads/alajo-profile.jpg "Alajo collector")
