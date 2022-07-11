@@ -30,7 +30,7 @@ I built the back office/admin of the Alajo web application where a branch manage
 
 I implemented every UI and integrated API from the backend. Used Chartjs for the several charts on the platform.
 
-![Alajo homepage](/uploads/alajo-homepage.png "Alajo homepage")
+![Alajo homepage](/uploads/alajo-homepage.jpg "Alajo homepage")
 
 ![Alajo tables](/uploads/alajo-two.png "Alajo tables")
 
