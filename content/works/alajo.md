@@ -20,7 +20,7 @@ maintags:
   - Bootstrap
   - Scss
 cover_image: /uploads/alajo-dashboard.png
-image: /uploads/alajo-dashboard.png
+image: /uploads/alajo-dashboard.jpg
 ---
 Alajo is a fintech company that set out to digitalize thrift collections to help solve challenges with traditional thrifters running away with people's savings. Also to help the unbanked develop a saving culture with a trustworthy system.
 
