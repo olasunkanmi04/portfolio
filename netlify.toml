@@ -1,0 +1,26 @@
+[build]
+  command = "npm run generate"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22.20.0"
+
+[[redirects]]
+  from = "/project/*"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/works/*"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/admin/*"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/assets/files/*"
+  to = "/"
+  status = 301

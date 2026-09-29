@@ -1,23 +1,20 @@
 {
-  "name": "portfolio",
+  "name": "olasunkanmi-dev",
+  "type": "module",
   "private": true,
   "scripts": {
-    "develop": "gridsome develop",
-    "explore": "gridsome explore",
-    "build": "gridsome build",
-    "generate-icons": "vsvg -s ./svg-icons -t ./src/assets/icons"
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@gridsome/source-filesystem": "^0.6.2",
-    "@gridsome/transformer-remark": "^0.6.4",
-    "gridsome": "^0.7.0",
-    "gridsome-plugin-netlify-cms": "^1.0.9",
-    "netlify-cms": "^2.10.139",
-    "vue-svgicon": "^3.2.9",
-    "vue2-smooth-scroll": "^1.5.0"
+    "nuxt": "^4.5.2",
+    "vue": "^3.5.43",
+    "vue-router": "^5.3.1"
   },
   "devDependencies": {
-    "node-sass": "^6.0.0",
-    "sass-loader": "^10.2.0"
+    "oxc-parser": "^0.151.0"
   }
 }
