@@ -6,6 +6,23 @@ const description =
 
 const year = new Date().getFullYear()
 
+const email = 'alabiolasunkanmi@hotmail.com'
+const emailCopied = ref(false)
+let copyResetTimer: ReturnType<typeof setTimeout> | undefined
+
+async function copyEmail() {
+  try {
+    await navigator.clipboard.writeText(email)
+    emailCopied.value = true
+    clearTimeout(copyResetTimer)
+    copyResetTimer = setTimeout(() => {
+      emailCopied.value = false
+    }, 2000)
+  } catch {
+    window.location.href = `mailto:${email}`
+  }
+}
+
 useHead({
   htmlAttrs: { lang: 'en' },
   title,
@@ -81,7 +98,12 @@ useHead({
         <a href="https://github.com/olasunkanmi04" target="_blank" rel="noopener noreferrer">
           GitHub
         </a>
-        <a href="mailto:alabiolasunkanmi@hotmail.com">Email</a>
+        <a
+          href="mailto:alabiolasunkanmi@hotmail.com"
+          aria-live="polite"
+          title="Click to copy email address"
+          @click.prevent="copyEmail"
+        >{{ emailCopied ? 'Copied!' : 'alabiolasunkanmi@hotmail.com' }}</a>
       </nav>
     </main>
 
