@@ -1,9 +1,9 @@
 [build]
   command = "npm run generate"
-  publish = "/public"
+  publish = ".output/public"
 
 [build.environment]
-  NODE_VERSION = "22"
+  NODE_VERSION = "22.20.0"
 
 [[redirects]]
   from = "/project/*"
