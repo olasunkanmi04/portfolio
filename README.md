@@ -27,15 +27,17 @@ Opens at `http://localhost:3000`.
 npm run generate
 ```
 
-Outputs a fully static site to `.output/public/`. Preview it locally with:
+Outputs a fully static site. Locally this lands in `.output/public/`:
 
 ```bash
 npx serve .output/public
 ```
 
+**On Netlify's build machine the output path is different.** Nuxt/Nitro detects the `NETLIFY` env var Netlify sets automatically and switches to the `netlify-static` preset, which writes the build to `dist/` instead of `.output/public/`. `netlify.toml`'s `publish` is set to `dist` to match — don't "fix" this back to `.output/public`, it only applies locally.
+
 ## Deploy
 
-Hosted on Netlify at `olasunkanmi.dev`. `netlify.toml` sets the build command (`npm run generate`), publish directory (`.output/public`), and 301 redirects from old routes (`/project/*`, `/works/*`, `/admin/*`, `/assets/files/*` — the old résumé PDF path) back to `/`, so old inbound links don't 404.
+Hosted on Netlify at `olasunkanmi.dev`. `netlify.toml` sets the build command (`npm run generate`), publish directory (`dist`, per the note above), and 301 redirects from old routes (`/project/*`, `/works/*`, `/admin/*`, `/assets/files/*` — the old résumé PDF path) back to `/`, so old inbound links don't 404.
 
 Netlify picks up `netlify.toml` automatically on push — no dashboard changes needed if the site was already connected to this repo.
 
