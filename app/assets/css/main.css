@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Fraunces";
+  src: url("/fonts/fraunces-variable-latin.woff2") format("woff2-variations"),
+    url("/fonts/fraunces-variable-latin.woff2") format("woff2");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-bg: #fbfbfa;
+  --color-text: #1a1a1a;
+  --color-muted: #55565a;
+  --color-accent: #1d4ed8;
+  --color-border: #e4e3df;
+
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-bg: #0f1113;
+    --color-text: #f2f2f0;
+    --color-muted: #a7a9ad;
+    --color-accent: #7fa8ff;
+    --color-border: #23262a;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme="dark"] {
+  --color-bg: #0f1113;
+  --color-text: #f2f2f0;
+  --color-muted: #a7a9ad;
+  --color-accent: #7fa8ff;
+  --color-border: #23262a;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a {
+    transition: color 0.15s ease, opacity 0.15s ease;
+  }
+}
