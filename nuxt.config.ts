@@ -11,7 +11,7 @@ export default defineNuxtConfig({
   },
   nitro: {
     prerender: {
-      routes: ['/']
+      routes: ['/', '/services']
     }
   },
   telemetry: false
